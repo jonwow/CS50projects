@@ -11,6 +11,7 @@ int z = 0;
 void lookForAMatch(char temp, string key[]);
 
 
+// Call the program with an encryption key (26 a-Z letters.)
 int main(int argc, string key[])
 {
     // TESTS:
@@ -46,6 +47,7 @@ int main(int argc, string key[])
     }
     // END OF TESTS
 
+    
     // ask the user for input
     string plainText = get_string("plaintext:  ");
 
@@ -85,6 +87,7 @@ int main(int argc, string key[])
 
 void lookForAMatch(char temp, string key[])
 {
+    // a variable to determine if a match was found or not (if it was not, the 'temp' character is a comma, a space or etc.
     bool foundIt = false;
 
     // from 'a' to 'z'
