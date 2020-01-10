@@ -1,4 +1,4 @@
-# CS50projects
+# CS50 projects
 Problem sets I solved from Harvard's 2019 Fall CS50 course.
 
 
