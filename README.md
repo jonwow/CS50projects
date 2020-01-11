@@ -1,6 +1,9 @@
 # CS50 projects
 Problem sets that I have solved from <a href="https://cs50.harvard.edu/college/2019/fall/"> Harvard's 2019 Fall CS50 course</a>.
-The majority of these projects were made with the <cs50.h> library which does not load properly outside of cs50 IDE. 
+
+The majority of these projects were made with the <b><cs50.h></b> library which does not load properly outside of cs50 IDE. 
+
+Project_name_old = the version with <b><cs50.h></b> library.
 
 
 <ul>
