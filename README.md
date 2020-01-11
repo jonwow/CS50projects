@@ -1,5 +1,5 @@
 # CS50 projects
-Problem sets I solved from Harvard's 2019 Fall CS50 course.
+Problem sets that I have solved from <a href="https://cs50.harvard.edu/college/2019/fall/"> Harvard's 2019 Fall CS50 course</a>.
 
 
 <ul>
