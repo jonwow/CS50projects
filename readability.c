@@ -15,6 +15,7 @@ int main(void)
     // L - average number of letters per 100 words
     // S - average number of sentences per 100 words
     // word = chars until space, sentences - words until .!?
+    // integer 'words' starts from 1 because of the way it is counted (see line 37)
     // min 1 grade, max 16 grade.
     int L = 0, S = 0, words = 1, index;
 
