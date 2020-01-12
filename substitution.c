@@ -5,7 +5,7 @@
 // variables
 string abc = "abcdefghijklmnopqrstuvwxyz";
 char cipherText[888] = {};
-int z = 0;
+int index = 0;
 
 // functions
 void lookForAMatch(char temp, string key[]);
@@ -34,14 +34,14 @@ int main(int argc, string key[])
     {
         if (key[1][i] == key[1][i - 1])
         {
-            printf("Usage: ./substitution key");
+            printf("Bad key. Duplicate characters.");
             return 1;
         }
 
         // z in ascii: 122, A: 65.
         if (key[1][i] > 'z' || key[1][i] < 'A')
         {
-            printf("Usage: ./substitution key");
+            printf("Bad key. Incorrect characters. (Accepting only a-Z)");
             return 1;
         }
     }
@@ -70,10 +70,9 @@ int main(int argc, string key[])
 
 
         // making the letter capitalized or not depending on its initial state.
-
         if (isCapital == true)
         {
-            cipherText[z - 1] -= 32;
+            cipherText[index - 1] -= 32;
         }
 
     }
@@ -97,23 +96,23 @@ void lookForAMatch(char temp, string key[])
         if (temp == abc[counter])
         {
             // counter = the index of the alphabet where the letter should be. usable in the key too
-            cipherText[z] = key[1][counter];
+            cipherText[index] = key[1][counter];
 
             // if the key letter is capital, make it lowercase
             if (key[1][counter] >= 65 && key[1][counter] <= 90)
             {
-                cipherText[z] += 32;
+                cipherText[index] += 32;
             }
 
-            z++;
+            index++;
             foundIt = true;
         }
     }
 
-    // for .,
+    // if the program didn't find a match, this block of code gets executed (typically for characters such as 'space', comma or period.
     if (foundIt == false)
     {
-        cipherText[z] = temp;
-        z++;
+        cipherText[index] = temp;
+        index++;
     }
 }
