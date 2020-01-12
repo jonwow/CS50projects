@@ -1,3 +1,6 @@
+// Example input (26 letter a-Z key):
+// ./substitution VcHpRzGjNtLsKfBdQwAxEuYmOi
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
@@ -11,7 +14,7 @@ int index = 0;
 void lookForAMatch(char temp, string key[]);
 
 
-// Call the program with an encryption key (26 a-Z letters.)
+
 int main(int argc, string key[])
 {
     // TESTS:
@@ -38,7 +41,7 @@ int main(int argc, string key[])
             return 1;
         }
 
-        // z in ascii: 122, A: 65.
+        // letter z value is: 122, A: 65.
         if (key[1][i] > 'z' || key[1][i] < 'A')
         {
             printf("Bad key. Incorrect characters. (Accepting only a-Z)");
