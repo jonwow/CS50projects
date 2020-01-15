@@ -30,6 +30,7 @@ void print_winner(void);
 
 int main(int argc, string argv[])
 {
+    ////////////////////// TESTS (and populating array of candidates)
     // Check for invalid usage
     if (argc < 2)
     {
@@ -39,14 +40,16 @@ int main(int argc, string argv[])
 
     // Populate array of candidates
     candidate_count = argc - 1;
+    
     if (candidate_count > MAX)
     {
         printf("Maximum number of candidates is %i\n", MAX);
         return 2;
     }
-    // END OF TESTS
+    //////////////////////// END OF TESTS
 
-
+    
+    // Put the candidate names and set vote counts to 0 in the 'candidates' array.
     for (int i = 0; i < candidate_count; i++)
     {
         candidates[i].name = argv[i + 1];
@@ -61,7 +64,7 @@ int main(int argc, string argv[])
     {
         string name = get_string("Vote: ");
 
-        // Check for invalid vote. If 'vote' detects no matches, it returns false and this 'if' block gets triggered.
+        // Check for invalid vote. If 'vote' function detects no matches, it returns false and this 'if' block gets triggered.
         if (!vote(name))
         {
             printf("Invalid vote.\n");
@@ -72,11 +75,13 @@ int main(int argc, string argv[])
     print_winner();
 }
 
+
 // Update vote totals given a new vote
 bool vote(string name)
 {
     for (int i = 0; i < candidate_count; i++)
     {
+        // if 'strcmp' is false (if both strings are IDENTICAL), add a vote to a candidate
         if (!strcmp(name, candidates[i].name))
         {
             candidates[i].votes++;
@@ -84,7 +89,6 @@ bool vote(string name)
         }
     }
 
-    // TODO
     return false;
 }
 
@@ -133,4 +137,3 @@ void print_winner(void)
 
     return;
 }
-
