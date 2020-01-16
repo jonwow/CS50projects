@@ -1,3 +1,13 @@
+// SAMPLE INPUT:
+// ./plurality Alice Bob
+// 3
+// Alice
+// Alice
+// Bob
+// EXPECTED OUTPUT:
+// Alice
+
+
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
