@@ -10,7 +10,7 @@ Project_name_old = the version with <b><cs50.h></b> library.
   <li> <b> <a href="https://github.com/jonwow/CS50projects/blob/master/readability.c"> Readability </a> </b> - determines what grade a person has to be in to understand the text.</li>
   <li> <b> <a href="https://github.com/jonwow/CS50projects/blob/master/substitution.c"> Substitution </a> </b> - encrypts the input with a 26-letter key.</li>
     <li> <b> <a href="https://github.com/jonwow/CS50projects/blob/master/plurality.c"> Plurality </a> </b> - election program that determines the winner.</li>
-    <li> <b> <a href="https://github.com/jonwow/CS50projects/blob/master/tideman.c"> Tideman </a> </b> - election program that determines the winner by ranks.</li>
+    <li> <b> <a href="https://github.com/jonwow/CS50projects/blob/master/tideman.c"> Tideman </a> </b> - election program that determines the winner by ranks. <strong> STILL IN PROGRESS </strong></li>
 
 </ul>
   
